@@ -27,6 +27,22 @@ export default function App() {
             kind: "block",
             type: "go_to_link",
           },
+          {
+            kind: "block",
+            type: "click_button_xpath",
+          },
+            {
+            kind: "block",
+            type: "click_button_text",
+      },
+          {
+            kind: "block",
+            type: "click_button_class_name",
+          },
+          {
+            kind: "block",
+            type: "fill_input",
+          },
         ],
       },
       {
