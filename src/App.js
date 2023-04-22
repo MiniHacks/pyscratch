@@ -7,7 +7,7 @@ import "blockly/python";
 
 export default function App() {
   const [xml, setXml] = useState("");
-  const [javascriptCode, setJavascriptCode] = useState("");
+  const [pythonCode, setPythonCode] = useState("");
 
   const initialXml =
       '<xml xmlns="http://www.w3.org/1999/xhtml"><block type="text" x="70" y="30"><field name="TEXT"></field></block></xml>';
@@ -44,6 +44,30 @@ export default function App() {
             type: "fill_input",
           },
         ],
+      },
+      {
+        kind: "category",
+        name: "Web Scraping",
+        colour: 80,
+        contents: [
+            {
+            kind: "block",
+            type: "import_pd_and_np",
+            },
+            {
+            kind: "block",
+            type: "scrape_element_class_name",
+            },
+            {
+            kind: "block",
+            type: "scrape_element_xpath",
+            },
+            {
+            kind: "block",
+            type: "generate_csv",
+            }
+        ],
+
       },
       {
         kind: "category",
@@ -647,7 +671,7 @@ export default function App() {
   };
   function workspaceDidChange(workspace) {
     const code = Blockly.Python.workspaceToCode(workspace);
-    setJavascriptCode(code);
+    setPythonCode(code);
   }
 
   return (
@@ -667,11 +691,11 @@ export default function App() {
         onWorkspaceChange={workspaceDidChange}
         onXmlChange={setXml}
       />
-      <pre id="generated-xml">{xml}</pre>
+      {/*<pre id="generated-xml">{xml}</pre>*/}
       <textarea
         id="code"
-        style={{ height: "200px", width: "400px" }}
-        value={javascriptCode}
+        style={{ height: "400px", width: "400px" }}
+        value={pythonCode}
         readOnly
       ></textarea>
     </>
