@@ -9,5 +9,6 @@ const reportWebVitals = onPerfEntry => {
     });
   }
 };
+// This is a more detailed comment for BLAM's file.
 
 export default reportWebVitals;
