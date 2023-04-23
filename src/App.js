@@ -5,6 +5,9 @@ import { BlocklyWorkspace } from "react-blockly";
 import Blockly from "blockly";
 import pythonGenerator from "blockly/python";
 import {toolboxCategories} from "./toolboxCategories";
+import SelImage from "./selenium.png";
+import GenImage from "./GenImage.png";
+import landingPage from "./ImageForLandingPageBG.png";
 
 export default function App() {
     const [xml, setXml] = useState("");
@@ -18,7 +21,6 @@ export default function App() {
         const code = pythonGenerator.workspaceToCode(workspace);
         setPythonCode(code);
     }
-
     const HandleClick = ( event ) => {
         const value = event.target.value;
         setXml(value);
@@ -59,19 +61,59 @@ export default function App() {
     return (
         <>
             <div className="BG">
-                <div>
+                <div style={{
+                    flexDirection: "column",
+                }}>
                     <div className="title">pyscratch</div>
                     <div className="Slogan">Scratch For <br/> Adults</div>
-                    <div className="Subtitle">A cheesy line that's pog</div>
+                    <div className="Subtitle">Automate, Elevate, and Be Productive</div>
                     <div className="GSButton">Get Started</div>
                 </div>
-
             </div>
             <div style={{
                 width: "100%",
-                height: "200px",
-                backgroundColor: "#1e1e1e",
+                height: "900px",
+                backgroundColor: "#fff",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
             }}>
+                <div style={{
+                    fontSize: "50px",
+                    fontWeight: "bold",
+                    color: "#000",
+                    fontFamily: "Poppins",
+                    marginTop: "-100px",
+                }}>Tutorial</div>
+                <div style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                }}
+                     >
+
+                <div className="card" style={{
+                    marginRight: "20px",
+                }}>
+                    <div className="cardTitle">Step 1</div>
+                    <div className="cardSubtitle" style={{padding: "25px"}}>Click on the Automation tab of the workspace. Begin with the "Start Selenium" block and start adding blocks to create scripts.</div>
+                    <img src={SelImage} style={{width: "100%", height: "43%", borderRadius: "10px"}}/>
+                </div>
+                <div className="card" style={{
+                    marginRight: "20px",}}>
+                    <div className="cardTitle">Step 2</div>
+                    <div className="cardSubtitle" style={{padding: "25px"}}>Right next to the blockly workspace, there is a python code generator. This is how your blocks are translated for real time applications.</div>
+                    <img className="COOL" src={GenImage} style={{width: "90%", height: "16%", marginTop: "30px"
+                    }}/>
+                </div>
+                <div className="card" style={{
+                    marginRight: "20px",}}>
+                    <div className="cardTitle">Step 3</div>
+                    <div className="cardSubtitle" style={{padding: "25px"}}>Once your blockly code is finished, click the download button to get the actual python file that can be run on any text editor. </div>
+                    <button className="ButtonPhony" >Download</button>
+                </div>
+                </div>
             </div>
             <div style={{
                 display: "flex",
@@ -87,10 +129,9 @@ export default function App() {
                     onWorkspaceChange={workspaceDidChange}
                     onXmlChange={setXml}
                 />
-
                 <textarea
                     id="code"
-                    style={{ height: "695px", width: "50%", backgroundColor: "#1e1e1e", color: "white"}}
+                    style={{ padding: "10px", height: "678px", maxWidth: "50%", minWidth: "50%", backgroundColor: "#1e1e1e", color: "white",  minHeight: "678px", overflow: "auto"}}
                     value={pythonCode}
                     readOnly
                 ></textarea>
