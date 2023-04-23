@@ -7,7 +7,7 @@ import pythonGenerator from "blockly/python";
 import {toolboxCategories} from "./toolboxCategories";
 import SelImage from "./selenium.png";
 import GenImage from "./GenImage.png";
-import Duck from "./Duck.png";
+import Duck from "./Duck_Dance.png";
 import Image from "./ImageForLandingPageBG.png";
 
 export default function App() {
@@ -70,8 +70,8 @@ export default function App() {
                     <div className="Subtitle">Automate, Elevate, and Be Productive</div>
                     <div className="GSButton">Get Started</div>
                 </div>
-                {/*<img src={Duck} style={{position: "absolute", right: "0px", width: "60%", height: "90%", marginTop: "-550px"}}/>*/}
-                <img src={Image} style={{position: "absolute", right: "0px", width: "47%", height: "90%", marginTop: "-550px", marginRight: "30px"}}/>
+                <img src={Duck} style={{position: "absolute", right: "0px", width: "500px", height:"750px", marginTop: "-500px", marginRight:"150px"}}/>
+                {/*<img src={Image} style={{position: "absolute", right: "0px", width: "47%", height: "90%", marginTop: "-550px", marginRight: "30px"}}/>*/}
             </div>
             <div style={{
                 width: "100%",
