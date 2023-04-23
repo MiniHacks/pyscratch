@@ -30,9 +30,19 @@ export default function App() {
             <div className="Subtitle">A cheesy line that's pog</div>
             <div className="GSButton">Get Started</div>
           </div>
-          <div className="CircleBG"></div>
-        </div>
 
+        </div>
+          <div style={{
+              width: "100%",
+              height: "200px",
+              backgroundColor: "#1e1e1e",
+              border: "1px solid #1e1e1e",
+          }}>
+          </div>
+          <div style={{
+            display: "flex",
+            flexDirection: "row",
+          }}>
         <BlocklyWorkspace
             toolboxConfiguration={toolboxCategories}
             initialXml={initialXml}
@@ -45,10 +55,11 @@ export default function App() {
         />
         <textarea
             id="code"
-            style={{ height: "400px", width: "400px" }}
+            style={{ height: "700px", width: "50%", backgroundColor: "#1e1e1e", color: "white"}}
             value={pythonCode}
             readOnly
         ></textarea>
+          </div>
       </>
   );
 }
