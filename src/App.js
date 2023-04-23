@@ -19,6 +19,38 @@ export default function App() {
         const code = pythonGenerator.workspaceToCode(workspace);
         setPythonCode(code);
     }
+
+
+    function DownloadPythonFile({ code }) {
+        function handleDownloadClick() {
+            // Create a Blob object from the code
+            const blob = new Blob([code], { type: 'text/plain' });
+
+            // Create a URL object from the Blob
+            const url = URL.createObjectURL(blob);
+
+            // Create a link element and set its href attribute to the URL
+            const link = document.createElement('a');
+            link.href = url;
+
+            // Set the link's download attribute to the desired file name
+            link.download = 'script.py';
+
+            // Programmatically click the link to start the download
+            document.body.appendChild(link);
+            link.click();
+
+            // Cleanup the URL object
+            URL.revokeObjectURL(url);
+        }
+
+        return (
+            <button className="button" onClick={handleDownloadClick}>
+                Download
+            </button>
+        );
+    }
+
     return (
         <>
             <div className="BG">
@@ -65,6 +97,7 @@ export default function App() {
                     readOnly
                 ></textarea>
             </div>
+            <DownloadPythonFile code={pythonCode} />
         </>
     );
 }
