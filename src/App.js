@@ -651,29 +651,39 @@ export default function App() {
   }
 
   return (
-    <>
-      <BlocklyWorkspace
-        toolboxConfiguration={toolboxCategories}
-        initialXml={initialXml}
-        className="fill-height"
-        workspaceConfiguration={{
-          grid: {
-            spacing: 20,
-            length: 3,
-            colour: "#ccc",
-            snap: true,
-          },
-        }}
-        onWorkspaceChange={workspaceDidChange}
-        onXmlChange={setXml}
-      />
-      <pre id="generated-xml">{xml}</pre>
-      <textarea
-        id="code"
-        style={{ height: "200px", width: "400px" }}
-        value={javascriptCode}
-        readOnly
-      ></textarea>
-    </>
+      <>
+        <div className="BG">
+          <div>
+            <div className="title">pyscratch</div>
+            <div className="Slogan">Scratch For <br/> Adults</div>
+            <div className="Subtitle">A cheesy line that's pog</div>
+            <div className="GSButton">Get Started</div>
+          </div>
+          <div className="CircleBG"></div>
+        </div>
+
+        <BlocklyWorkspace
+            toolboxConfiguration={toolboxCategories}
+            initialXml={initialXml}
+            className="fill-height"
+            workspaceConfiguration={{
+              grid: {
+                spacing: 20,
+                length: 3,
+                colour: "#ccc",
+                snap: true,
+              },
+            }}
+            onWorkspaceChange={workspaceDidChange}
+            onXmlChange={setXml}
+        />
+        <pre id="generated-xml">{xml}</pre>
+        <textarea
+            id="code"
+            style={{ height: "200px", width: "400px" }}
+            value={javascriptCode}
+            readOnly
+        ></textarea>
+      </>
   );
 }
