@@ -34,6 +34,30 @@ export const toolboxCategories = {
         },
         {
             kind: "category",
+            name: "Web Scraping",
+            colour: 80,
+            contents: [
+                {
+                    kind: "block",
+                    type: "import_pd_and_np",
+                },
+                {
+                    kind: "block",
+                    type: "scrape_element_class_name",
+                },
+                {
+                    kind: "block",
+                    type: "scrape_element_xpath",
+                },
+                {
+                    kind: "block",
+                    type: "generate_csv",
+                }
+            ],
+
+        },
+        {
+            kind: "category",
             name: "Logic",
             colour: 210,
             contents: [

@@ -1,5 +1,6 @@
 .fill-height {
   height: calc(100vh - 114px);
+width: 50%;
 }
 
 .BG {
