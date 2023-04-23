@@ -1,3 +1,60 @@
 .fill-height {
   height: calc(100vh - 114px);
 }
+
+.BG {
+  background-color: #98CC80;
+  height: 950px;
+  width: 100%;
+}
+.CircleBG {
+  background-color: #D7FFC5;
+  height: 1091px;
+  width: 1091px;
+  border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    right: -450px;
+}
+.title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-left: 80px;
+}
+.Slogan {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  padding-top: 150px;
+  padding-left: 80px;
+}
+.Subtitle {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+.GSButton {
+    background-color: #D7FFC5;
+    color: #86C26A;
+    border-radius: 40px;
+    height: 40px;
+    width: 175px;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 80px;
+
+}
