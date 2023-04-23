@@ -19,8 +19,6 @@ export default function App() {
         setPythonCode(code);
     }
 
-<<<<<<< HEAD
-
     function DownloadPythonFile({ code }) {
         function handleDownloadClick() {
             // Create a Blob object from the code
@@ -51,8 +49,6 @@ export default function App() {
         );
     }
 
-=======
->>>>>>> parent of 6eb69bf (🫳some basic frontend changes)
     return (
         <>
             <div className="BG">
@@ -93,11 +89,8 @@ export default function App() {
                     readOnly
                 ></textarea>
             </div>
-<<<<<<< HEAD
             <DownloadPythonFile code={pythonCode} />
-=======
 
->>>>>>> parent of 6eb69bf (🫳some basic frontend changes)
         </>
     );
 }
