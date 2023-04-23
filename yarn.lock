@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@aneilmac/blockly-theme-seshat@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@aneilmac/blockly-theme-seshat/-/blockly-theme-seshat-1.1.1.tgz#a4a6efdc5bbfc3327ff6d78c2feea6721a7ccc9a"
+  integrity sha512-w5SJC6h8EDqJaXW6ZiPlkW8cs50le+bdmcHzVluifJJ1u7ke0oVyFB1fNvI9338QTbAjnt706MzzyqidNY1SmA==
+  dependencies:
+    webfontloader "^1.6.28"
+
 "@babel/code-frame@7.10.4", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.5.5":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -1369,6 +1376,11 @@
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
+
+"@blockly/theme-dark@^4.0.7":
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/@blockly/theme-dark/-/theme-dark-4.0.7.tgz#5544b7e959723c97154b2e2c77537c359462e2e1"
+  integrity sha512-NegmW6DxvDISxonJ8gtp/CGxYZmtNYyjR2t7V5GzwnZhU1QV1aZVJk49f3CbFftQm3W93wHZ9HQn80oTbOCbiQ==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
@@ -11544,6 +11556,11 @@ web-vitals@^0.2.4:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-0.2.4.tgz#ec3df43c834a207fd7cdefd732b2987896e08511"
   integrity sha512-6BjspCO9VriYy12z356nL6JBS0GYeEcA457YyRzD+dD6XYCQ75NKhcOHUMHentOE7OcVCIXXDvOm0jKFfQG2Gg==
+
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha512-Egb0oFEga6f+nSgasH3E0M405Pzn6y3/9tOVanv/DLfa1YBIgcv90L18YyWnvXkRbIM17v5Kv6IT2N6g1x5tvQ==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
