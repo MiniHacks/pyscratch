@@ -7,7 +7,8 @@ import pythonGenerator from "blockly/python";
 import {toolboxCategories} from "./toolboxCategories";
 import SelImage from "./selenium.png";
 import GenImage from "./GenImage.png";
-import landingPage from "./ImageForLandingPageBG.png";
+import Duck from "./Duck.png";
+import Image from "./ImageForLandingPageBG.png";
 
 export default function App() {
     const [xml, setXml] = useState("");
@@ -69,6 +70,8 @@ export default function App() {
                     <div className="Subtitle">Automate, Elevate, and Be Productive</div>
                     <div className="GSButton">Get Started</div>
                 </div>
+                {/*<img src={Duck} style={{position: "absolute", right: "0px", width: "60%", height: "90%", marginTop: "-550px"}}/>*/}
+                <img src={Image} style={{position: "absolute", right: "0px", width: "47%", height: "90%", marginTop: "-550px", marginRight: "30px"}}/>
             </div>
             <div style={{
                 width: "100%",
@@ -139,13 +142,13 @@ export default function App() {
             </div>
             <div className = "footer">
                 <div className = "line1">Made for LA Hacks 2023</div>
-                <div className = "line2">Hacked together by
+                <div className = "line2">Hacked together by &nbsp;
                     <a href = "https://anshpa.tel/">Ansh</a>,&nbsp;
                     <a href = "https://www.iamstuti.com/">Stuti</a>,&nbsp;
                     <a href = "https://www.brandonlam.dev/">Brandon</a>, and&nbsp;
                     <a href = "https://www.linkedin.com/in/smritikhulbe/">Smriti</a>. We all study at the University of Minnesota, Twin Cities.</div>
-                <div className = "line3">Star us on
-                    <a href = "https://github.com/FernandoVazZ/reactblockly-customblocks">Github</a> and like us on
+                <div className = "line3">Star us on &nbsp;
+                    <a href = "https://github.com/FernandoVazZ/reactblockly-customblocks">Github</a> and like us on &nbsp;
                     <a href = "https://devpost.com/software/pyscratch">Devpost</a>.</div>
             </div>
         </>
