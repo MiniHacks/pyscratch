@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=MuseoModerno:wght@600&family=Poppins:wght@500;600&display=swap');
+
 .fill-height {
   height: calc(100vh - 114px);
 width: 50%;
@@ -25,11 +27,13 @@ width: 50%;
   line-height: 1.2;
   letter-spacing: 0.5px;
   color: #ffffff;
+  font-family: 'MuseoModerno', cursive;
   padding-top: 10px;
   padding-left: 80px;
 }
 .Slogan {
   font-size: 100px;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.5px;
@@ -40,6 +44,7 @@ width: 50%;
 .Subtitle {
     font-size: 40px;
     font-weight: 400;
+    font-family: 'Inter', sans-serif;
     line-height: 1.2;
     letter-spacing: 1px;
     color: #ffffff;
@@ -53,6 +58,7 @@ width: 50%;
     height: 40px;
     width: 175px;
     font-size: 24px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     letter-spacing: 0.5px;
     padding-top: 10px;
