@@ -48,7 +48,7 @@ export default function App() {
         }
 
         return (
-            <div style={{ display: "flex", justifyContent: "end", paddingRight: '10px' }}>
+            <div style={{ position: "absolute", right: "0px", display: "flex", justifyContent: "end", paddingRight: '10px' }}>
             <button className="button" onClick={handleDownloadClick}>
                 Download
             </button>
@@ -71,7 +71,6 @@ export default function App() {
                 width: "100%",
                 height: "200px",
                 backgroundColor: "#1e1e1e",
-                border: "1px solid #1e1e1e",
             }}>
             </div>
             <div style={{
@@ -91,13 +90,12 @@ export default function App() {
 
                 <textarea
                     id="code"
-                    style={{ height: "700px", width: "50%", backgroundColor: "#1e1e1e", color: "white"}}
+                    style={{ height: "695px", width: "50%", backgroundColor: "#1e1e1e", color: "white"}}
                     value={pythonCode}
                     readOnly
                 ></textarea>
+                <DownloadPythonFile code={pythonCode} />
             </div>
-            <DownloadPythonFile code={pythonCode} />
-
         </>
     );
 }
