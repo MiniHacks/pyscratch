@@ -19,6 +19,11 @@ export default function App() {
         setPythonCode(code);
     }
 
+    const HandleClick = ( event ) => {
+        const value = event.target.value;
+        setXml(value);
+    }
+
     function DownloadPythonFile({ code }) {
         function handleDownloadClick() {
             // Create a Blob object from the code
@@ -43,9 +48,11 @@ export default function App() {
         }
 
         return (
+            <div style={{ display: "flex", justifyContent: "end", paddingRight: '10px' }}>
             <button className="button" onClick={handleDownloadClick}>
                 Download
             </button>
+            </div>
         );
     }
 

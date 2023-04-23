@@ -79,6 +79,10 @@ width: 50%;
     font-weight: 400;
     letter-spacing: 0.5px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 80px;
+}
+.button:hover{
+    background-color: #f6f1f1;
+    color: black;
 }
