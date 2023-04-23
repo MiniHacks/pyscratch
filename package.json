@@ -6,6 +6,8 @@
   "main": "public/electron/electron.js",
   "homepage": "./",
   "dependencies": {
+    "@aneilmac/blockly-theme-seshat": "^1.1.1",
+    "@blockly/theme-dark": "^4.0.7",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
