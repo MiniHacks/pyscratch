@@ -47,7 +47,7 @@ Blockly.Blocks['fill_input'] = {
     init: function() {
         this.appendDummyInput()
             .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField("Enter input");
+            .appendField("Enter Input");
         this.appendValueInput("input")
             .setCheck("String")
             .setAlign(Blockly.ALIGN_RIGHT)
@@ -94,6 +94,76 @@ Blockly.Blocks['click_button_class_name'] = {
     }
 };
 
+Blockly.Blocks['import_pd_and_np'] = {
+    init: function() {
+        this.appendDummyInput()
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .appendField("Import pandas");
+        this.appendDummyInput()
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .appendField("Import NumPy");
+        this.appendDummyInput()
+            .appendField("Create Dataframe");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(230);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
+};
+
+Blockly.Blocks['scrape_element_class_name'] = {
+    init: function() {
+        this.appendValueInput("name")
+            .setCheck("String")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .appendField("Name");
+        this.appendValueInput("class_name")
+            .setCheck("String")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .appendField("Class Name");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(65);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
+};
+
+Blockly.Blocks['scrape_element_xpath'] = {
+    init: function() {
+        this.appendValueInput("Name")
+            .setCheck("String")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .appendField("Name");
+        this.appendValueInput("XPATH")
+            .setCheck("String")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .appendField("XPATH");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(300);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
+};
+
+Blockly.Blocks['generate_csv'] = {
+    init: function() {
+        this.appendDummyInput()
+            .appendField("Generate CSV");
+        this.appendValueInput("name")
+            .setCheck("String")
+            .setAlign(Blockly.ALIGN_RIGHT)
+            .appendField("CSV Name");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(15);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
+};
+
 Blockly.Python['start_selenium'] = function(block) {
     var code = 'from selenium import webdriver\n';
     code += 'from selenium.webdriver.common.keys import Keys\n';
@@ -133,5 +203,34 @@ Blockly.Python['click_button_class_name'] = function(block) {
     var value_class_name = Blockly.Python.valueToCode(block, 'Class Name', Blockly.Python.ORDER_ATOMIC);
     var code = "click_button = driver.find_element(By.CLASS_NAME," + value_class_name + ")\n";
     code += "click_button.click()\n" + "\n"
+    return code;
+};
+
+Blockly.Python['import_pd_and_np'] = function(block) {
+    var code = 'import pandas as pd\n';
+    code += 'import numpy as np\n';
+    code += 'df = pd.DataFrame()\n' + "\n";
+    return code;
+};
+
+Blockly.Python['scrape_element_class_name'] = function(block) {
+    var value_name = Blockly.Python.valueToCode(block, 'name', Blockly.Python.ORDER_ATOMIC);
+    var value_class_name = Blockly.Python.valueToCode(block, 'class_name', Blockly.Python.ORDER_ATOMIC);
+    var code = 'scraped_elements = driver.find_elements(By.CLASS_NAME,' + value_class_name + ')\n';
+    code += 'df[' + value_name + '] = [element.text for element in scraped_elements]\n' + "\n";
+    return code;
+};
+
+Blockly.Python['scrape_element_xpath'] = function(block) {
+    var value_name = Blockly.Python.valueToCode(block, 'Name', Blockly.Python.ORDER_ATOMIC);
+    var value_xpath = Blockly.Python.valueToCode(block, 'XPATH', Blockly.Python.ORDER_ATOMIC);
+    var code = 'scraped_elements = driver.find_elements(By.XPATH,' + value_xpath + ')\n';
+    code += 'df[' + value_name + '] = [element.text for element in scraped_elements]\n' + "\n";
+    return code;
+};
+
+Blockly.Python['generate_csv'] = function(block) {
+    var value_name = Blockly.Python.valueToCode(block, 'name', Blockly.Python.ORDER_ATOMIC);
+    var code = 'df.to_csv(' + value_name + ')\n' + "\n";
     return code;
 };
