@@ -96,6 +96,17 @@ export default function App() {
                 ></textarea>
                 <DownloadPythonFile code={pythonCode} />
             </div>
+            <div className = "footer">
+                <div className = "line1">Made for LA Hacks 2023</div>
+                <div className = "line2">Hacked together by
+                    <a href = "https://anshpa.tel/">Ansh</a>,&nbsp;
+                    <a href = "https://www.iamstuti.com/">Stuti</a>,&nbsp;
+                    <a href = "https://www.brandonlam.dev/">Brandon</a>, and&nbsp;
+                    <a href = "https://www.linkedin.com/in/smritikhulbe/">Smriti</a>. We all study at the University of Minnesota, Twin Cities.</div>
+                <div className = "line3">Star us on
+                    <a href = "https://github.com/FernandoVazZ/reactblockly-customblocks">Github</a> and like us on
+                    <a href = "https://devpost.com/software/pyscratch">Devpost</a>.</div>
+            </div>
         </>
     );
 }
