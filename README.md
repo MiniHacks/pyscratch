@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# pyscratch
+![pyscratch](/display.png)
+# Inspiration
+As a team of developers interested in educational technology, we wanted to create a platform that was not only fun and engaging for all ages, but also provided more advanced tools for older users. We were inspired by the simplicity and ease of use of Scratch, but wanted to add more features and customization options to make it even more useful.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# What it does
+PyScratch is a Scratch-like platform that allows users to easily create interactive projects and games with visual coding blocks. In addition to the standard Scratch blocks, we added custom blocks that did more productive tasks for the older generation such as web scraping, auto-clicking, and more. This makes PyScratch an ideal tool for hobbyists, educators, and professionals alike.
 
-## Available Scripts
+# How we built it
+PyScratch is built using Google's Blockly infrastructure, with additional custom blocks added by our team. We used a combination of JavaScript, HTML, and CSS to build the frontend, with Flask as our backend framework. We also integrated various APIs and libraries, such as Selenium for web scraping and auto-clicking.
 
-In the project directory, you can run:
+# Challenges we ran into
+One of the biggest challenges we faced was adding custom blocks to the platform. We had to dive deep into the Blockly documentation and experiment with different approaches before we found a solution that worked. Additionally, we had to make sure that the platform was user-friendly and accessible to people of all ages and technical backgrounds.
 
-### `yarn start`
+# Accomplishments that we're proud of
+We're proud of the fact that we were able to create a platform that combines the simplicity and ease of use of Scratch with more advanced features for older users. We're also proud of the custom blocks we added, which we believe make PyScratch more useful and versatile than other Scratch-like platforms.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# What we learned
+Throughout the development process, we learned a lot about JavaScript, Flask, and various APIs and libraries. We also learned a lot about user interface design and accessibility, which we believe will help us create better products in the future.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# What's next for PyScratch
+We plan to continue adding more custom blocks and features to PyScratch to make it even more useful for all users. Additionally, we're exploring the possibility of integrating machine learning and artificial intelligence tools into the platform, which we believe would take PyScratch to the next level. Overall, we're excited to see how PyScratch will evolve and grow in the future.
